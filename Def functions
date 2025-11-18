@@ -1,0 +1,13 @@
+def greet(name):
+    """Simple function that returns a greeting"""
+    return f"Hello, {name}!"
+
+def welcome_user(name):
+    """Function that calls another function"""
+    greeting = greet(name)  # Calling greet() function
+    print(greeting)
+    print("Welcome to our program!")
+
+# Test Example 1
+print("--- Example 1: Function Calling Another Function ---")
+welcome_user("Alice")
