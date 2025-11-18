@@ -1,0 +1,57 @@
+# ============================================
+# WHERE TO CALL agent1.display_all_values()
+# ============================================
+
+class Agent1:
+    """A class to represent an AI Agent with prompts and tasks"""
+
+    def __init__(self, prompttemplate, prompt1, prompt2, prompt3, prompttext, task1, task2, task3, result):
+        """Initialize an Agent with prompts and tasks"""
+        self.prompttemplate = prompttemplate
+        self.prompt1 = prompt1
+        self.prompt2 = prompt2
+        self.prompt3 = prompt3
+        self.prompttext = prompttext
+        self.task1 = task1
+        self.task2 = task2
+        self.task3 = task3
+        self.result = result
+
+    def result_values(self):
+        """Print all attribute values in a formatted way"""
+
+        print("\n" + "=" * 70)
+        print("AGENT1 - COMPLETE INFORMATION")
+        print("=" * 70)
+        print(f"\n🎯 RESULT:\n   {self.result}")
+        print("\n" + "=" * 70 + "\n")
+
+
+# ============================================
+# METHOD 1: CALL DIRECTLY AFTER CREATING AGENT
+# ============================================
+
+print("\n" + "█" * 70)
+print("METHOD 1: Call directly after creating Agent")
+print("█" * 70)
+
+agent1 = Agent1(
+    prompttemplate="Chatbot Template",
+    prompt1="What is your name?",
+    prompt2="What is your age?",
+    prompt3="What is your hobby?",
+    prompttext="Please answer the questions",
+    task1="Name Collection",
+    task2="Age Verification",
+    task3="Hobby Analysis",
+    result="User profile created successfully"
+)
+
+# 👉 CALL IT HERE - Right after creating the agent
+agent1.result_values()
+
+# This is import statement for calling
+#from my_classes import Address, Person
+#from agent_classes import agent1,agent2
+#insert agent classes inside all the programs
+#in the excel
